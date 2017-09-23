@@ -1,0 +1,406 @@
+@charset "Shift_JIS";
+/*■keitai-site.css■*/
+/*
+Copyright 2004 Mirai Research Institute, Ltd. All Rights Reserved.
+許可無くこのファイルを複製すると法律により罰せられます
+*/
+/*▼▼▼全サイト共通▼▼▼*/
+/*▼共通（サイト内）▼*/
+html,body,div,p,span,form{
+	margin:0;
+	padding:0;
+}
+/*
+	background-color:#ffffff;
+	background-color:#999999;
+*/
+body{
+	background-color:#ffffff;
+	font:14px 'ＭＳ ゴシック',Osaka,sans-serif;
+	color:dimgray;	/*文字色*/
+	margin:5px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	text-align:center;	/*ボックス要素を含めたセンタリング←削除不可*/
+}
+.alignleft{
+	text-align:left;
+}
+a{color:blue; text-decoration:underline;}		/*aタグの記述順は変えない事*/
+a:visited{color:mediumvioletred; text-decoration:underline;}
+a:hover{color:green; background-color:white; text-decoration:none;}
+.aname{	/*ページ内特定リンク時設定*/
+	color:black;
+	text-decoration:none;
+}
+p{
+	margin:14px 0px 0px 0px;
+	line-height:1.5em;
+	font-size:14px;
+	color:dimgray;
+}
+strong{color:dimgray; font-weight:normal;}	/*強調文字色*/
+em{color:dimgray; font-weight:normal; font-style:normal;}	/*強調文字色*/
+b{color:dimgray; font-weight:normal;}	/*強調文字色*/
+table{
+}
+th{
+	font-size:12px;
+	font-weight:normal;
+	background-color:#ffddbb;
+	padding:3px 0px 0px 0px;
+}
+td{
+	font-size:12px;
+	font-weight:normal;
+	background-color:#ffddff;
+	padding:3px 0px 0px 0px;
+	text-align:center;
+}
+ul{
+}
+li{
+	margin:3px 0px 0px 0px;
+}
+.listmark{
+	list-style-type:decimal;
+}
+.prlink{
+	width:180px;
+	height:18px;
+	overflow:auto;
+	border:solid 1px #aaaaaa;
+	background-color:#ffffff;
+}
+
+.prlink ul , .prlink li{
+	width:150px;
+	font-size:10px;
+	margin:0px 2px 2px;
+	padding:0px;
+	list-style-type:none;
+	line-height:120%;
+	display:block;
+}
+.disp{
+	display:none;
+}
+hr{
+	text-align:center;
+	width:70%
+}
+/*▼レイヤ１▼*/
+#layer1{width:800px;
+	background-color:#ffffff;
+	margin:0px auto;	/*センタリング用左右余白の自動設定←削除不可*/
+	padding:0px;
+}
+/*
+	background-color:#ffffff;
+	background-color:#bbbbbb;
+*/
+/*▼レイヤ２▼*/
+/*▼ナビ１のみ使用する場合に800pxにする▼*/
+/*▼ナビ１・ナビ２両方使用する場合に590pxにする▼*/
+/*
+	width:800px;
+	width:590px;
+*/
+#layer2{
+	float:left;
+	width:800px;
+	margin:5px 0px 0px 0px;
+}
+/*
+	background-color:#66CC33;
+	background-color:#ffffff;
+*/
+/*▼ヘッダ▼*/
+#header{
+	background-color:#66CC33;
+	text-align:right;
+	font-size:10px;
+	color:white;
+	width:800px;
+	margin:0px 0px 0px 0px;
+	border-top:solid 1px #669900;
+	border-right:solid 0px #669900;
+	border-left:solid 0px #669900;
+	border-bottom:solid 7px #669900;
+	padding:5px 0px 5px 0px;
+	filter:Alpha(style=1,opacity=100,finishopacity=30);
+}
+#header h1{font-size:10px;
+	color:white;
+	background-color:#66CC33;
+	font-weight:normal;
+	float:left;
+	text-align:left;
+	margin:0px 0px 0px 5px;
+	padding:0px 0px 0px 0px;}
+#header h2{font-size:10px;
+	color:white;
+	background-color:#66CC33;
+	font-weight:normal;
+	float:left;
+	text-align:left;
+	margin:0px 0px 0px 5px;
+	padding:0px 0px 0px 0px;}
+#sitename{
+	font-weight:bold;
+	text-align:left;
+	clear:both;
+	margin:0px 0px 0px 5px;
+	padding:0px 0px 0px 0px;}
+#sitename a{font-size:28px; color:#ffff99; text-decoration:none;}
+#sitename a:visited{color:#ffff99; text-decoration:none;}
+#sitename a:hover{color:#ffff99; background-color:#66CC33; text-decoration:none;}
+/*▼コンテンツ▼*/
+/*▼ナビ１のみ使用する場合に550pxにする▼*/
+/*▼ナビ１・ナビ２両方使用する場合に380pxにする▼*/
+/*
+	width:550px;
+	width:380px;
+*/
+#contents{
+	float:right;
+	width:550px;
+	text-align:left;
+	margin:0px 0px 30px 0px;
+}
+#contents h1{
+	color:black;
+	font-size:16px;
+	margin:10px 0px 10px 0px;
+	border-bottom:solid 1px yellowgreen;
+	border-left:solid 7px yellowgreen;
+	padding:2px 0px 4px 4px;
+}
+#contents h2{
+	color:black;
+	font-size:16px;
+	margin:10px 0px 10px 0px;
+	border-bottom:solid 1px yellowgreen;
+	border-left:solid 7px yellowgreen;
+	padding:2px 0px 4px 4px;
+}
+#contents h3{
+	color:black;
+	font-size:16px;
+	margin:10px 0px 10px 0px;
+	border-bottom:solid 1px yellowgreen;
+	border-left:solid 7px yellowgreen;
+	padding:2px 0px 4px 4px;
+}
+#contents p{
+}
+/*
+*/
+/*▼ナビ左▼*/
+#navi1{
+	width:205px;
+	float:left;
+	text-align:left;
+}
+#navi1 div{
+}
+#navi1 div.subj{
+	font-size:14px;
+	font-weight:bold;
+	background-color:lemonchiffon;
+	margin:10px 0px 10px 0px;
+	border-bottom:solid 2px yellowgreen;
+	text-align:center;
+}
+#navi1 a{
+	font-size:12px;
+	display:block;
+	width:195px;
+	padding:3px 0px 0px 5px;
+}
+#navi1 a:visited{color:mediumvioletred; text-decoration:underline;}
+#navi1 a:hover{
+	color:white;
+	background-color:dimgray;
+	text-decoration:none;
+}
+#navi1 div.link{
+	border-bottom:solid 0px yellowgreen;
+	border-left:solid 5px yellowgreen;
+}
+#navi1 div.exp{
+	margin:0px 0px 10px 0px;
+	border-bottom:solid 1px yellowgreen;
+	border-left:solid 5px yellowgreen;
+	padding:1px 0px 2px 5px;
+	font-size:12px;
+	color:dimgray;
+}
+#navi1 div.com{
+	margin:0px 0px 10px 0px;
+	padding:1px 0px 2px 5px;
+	font-size:12px;
+	color:dimgray;
+}
+/*
+*/
+/*▼ナビ右▼*/
+#navi2{
+	width:205px;
+	float:right;
+	text-align:left;
+	margin:5px 0px 0px 0px;
+}
+#navi2 div{
+}
+#navi2 div.subj{
+	font-size:14px;
+	font-weight:bold;
+	background-color:lemonchiffon;
+	margin:10px 0px 10px 0px;
+	border-bottom:solid 2px yellowgreen;
+	text-align:center;
+}
+#navi2 a{
+	font-size:12px;
+	display:block;
+	width:195px;
+	padding:3px 0px 0px 5px;
+}
+#navi2 a:visited{color:mediumvioletred; text-decoration:underline;}
+#navi2 a:hover{
+	color:white;
+	background-color:dimgray;
+	text-decoration:none;
+}
+#navi2 div.link{
+	border-bottom:solid 0px yellowgreen;
+	border-left:solid 5px yellowgreen;
+}
+#navi2 div.exp{
+	margin:0px 0px 10px 0px;
+	border-bottom:solid 1px yellowgreen;
+	border-left:solid 5px yellowgreen;
+	padding:1px 0px 2px 5px;
+	font-size:12px;
+	color:dimgray;
+}
+#navi2 div.com{
+	margin:0px 0px 10px 0px;
+	padding:1px 0px 2px 5px;
+	font-size:12px;
+	color:dimgray;
+}
+/*▼フッタ▼*/
+#footer{
+	clear:both;
+	font-size:10px;
+	border-top:solid 3px yellowgreen;
+	border-right:solid 1px yellowgreen;
+	margin:0px 0px 0px 0px;
+	padding:6px 0px 0px 0px;
+	text-align:left;
+}
+.bottomnavi{	/*▼ナビが改行してしまう場合はこれを増設▼*/
+	width:700px;
+	height:12px;
+	clear:both;
+	margin:0px 6px 6px 0px;	/*topは確保できず*/
+	padding:0px 0px 0px 0px;
+	list-style:none;
+	text-align:left;
+}
+.bottomnavi li{
+	float:left;
+	font-size:10px;
+	color:#ffff99;
+	margin:0px 2px 0px 2px;
+	border-left:solid 1px dimgray;
+	border-right:solid 1px dimgray;
+	padding:0px 2px 0px 2px;
+}
+#copy{
+	clear:both;
+	font-size:10px;
+	margin:6px 6px 6px 6px;
+	padding:0px 0px 0px 0px;
+	text-align:left;
+}
+.pagetop{
+	font-size:10px;
+	margin:6px 6px 6px 6px;
+	padding:0px 0px 0px 0px;
+	text-align:right;
+}
+/*▲▲▲全サイト共通▲▲▲*/
+/*▼▼▼keitai-siteオリジナル▼▼▼*/
+/*
+/*
+	background-color:#336666;
+	border-top:solid 1px #003333;
+	border-bottom:solid 7px #003333;
+*/
+th{
+	background-color:#99cccc;
+}
+td{
+	background-color:#ccffff;
+}
+img.qr{
+	width:74px;
+	height:74px;
+}
+/*▼ヘッダ▼*/
+#header{
+	background-color:#999999;
+	border-top:solid 1px #666666;
+	border-bottom:solid 7px #666666;
+}
+#header h1{
+	color:white;
+	background-color:#999999;
+}
+#header h2{
+	color:white;
+	background-color:#999999;
+}
+#sitename a{
+	color:#ffff99;
+}
+#sitename a:visited{
+	color:#ffff99;
+}
+#sitename a:hover{
+	color:#ffff99;
+	background-color:#999999;
+}
+/*▼コンテンツ▼*/
+#contents h1{
+	border-bottom:solid 1px #666666;
+	border-left:solid 7px #666666;
+}
+#contents h2{
+	border-bottom:solid 1px #666666;
+	border-left:solid 7px #666666;
+}
+#contents h3{
+	border-bottom:solid 1px #666666;
+	border-left:solid 7px #666666;
+}
+#navi1 div.subj{
+	background-color:#ffffcc;
+	border-bottom:solid 2px #666666;
+}
+#navi1 div.link{
+	border-bottom:solid 0px #666666;
+	border-left:solid 5px #666666;
+}
+#navi1 div.exp{
+	border-bottom:solid 1px #666666;
+	border-left:solid 5px #666666;
+}
+/*▼フッタ▼*/
+#footer{
+	border-top:solid 3px #666666;
+	border-right:solid 1px #666666;
+}
+/*▲▲▲keitai-siteオリジナル▲▲▲*/
